@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://chatterly-backend-f9j0.onrender.com/api',
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 // Attach JWT to every request

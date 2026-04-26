@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 let socket = null;
 
 export const initSocket = (token) => {
-  const socketUrl = import.meta.env.VITE_SOCKET_URL || 'https://chatterly-backend-f9j0.onrender.com';
+  const socketUrl = import.meta.env.VITE_SOCKET_URL;
   socket = io(socketUrl, {
     auth: { token },
     reconnection: true,
